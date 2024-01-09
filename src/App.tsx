@@ -11,7 +11,7 @@ function App() {
       <div className='flex flex-col items-center justify-center gap-10 mt-6'>
         <Header></Header>
         <Body></Body>
-          <section className="
+        <section className="
                     flex flex-col items-center justify-center 
                     h-auto w-full py-10
                     bg-terciary
