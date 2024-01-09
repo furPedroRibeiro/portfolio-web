@@ -2,7 +2,7 @@ import { Hyperlink } from "./reset/Hyperlink";
 
 export function Header(){
     return(
-        <section aria-label="Cabeçalho sobre mim">
+        <section className="mx-6" aria-label="Cabeçalho sobre mim">
             <div className='flex flex-wrap-reverse items-center justify-center h-auto gap-8 py-12'>
                 <div className="h-36">
                     <img className='object-cover rounded-full aspect-square' src="https://arslibri.com.br/assets/home/sobre-nos-fotos/pedro.webp" alt="" width={144}/>

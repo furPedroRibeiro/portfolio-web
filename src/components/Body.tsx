@@ -4,7 +4,7 @@ import { TitleSection } from "./reset/TitleSection";
 export function Body(){
     return(
         <div>
-            <section className="flex flex-col items-center justify-center mb-10">
+            <section className="flex flex-col items-center justify-center mb-10 mx-6">
                 <TitleSection
                 title='Tecnologias'
                 />

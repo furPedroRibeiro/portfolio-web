@@ -8,7 +8,7 @@ import './styles/App.css'
 function App() {
   
   return (
-      <div className='flex flex-col items-center justify-center mx-6 gap-10 mt-6'>
+      <div className='flex flex-col items-center justify-center gap-10 mt-6'>
         <Header></Header>
         <Body></Body>
           <section className="
