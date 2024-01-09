@@ -33,7 +33,8 @@ export function CardProjetos(props: CardProjetos){
             className='
             flex flex-col items-center justify-center
             gap-3 py-10 px-6 w-80
-            cursor-pointe rounded-xl
+            cursor-pointer rounded-xl
+            border border-primary
             hover:bg-secondary hover:bg-opacity-30
             transition-color duration-700'
         >
