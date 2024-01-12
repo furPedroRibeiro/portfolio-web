@@ -12,8 +12,14 @@ export default {
       'primary': 'white',
       'secondary': 'black',
       'terciary': 'white',
+      'out-contrast': '#212121',
     },
-    extend: {},
+    extend: {
+      transitionProperty: {
+        'display': 'display',
+        'spacing': 'margin, padding, height, opacity',
+      }
+    },
   },
   plugins: [],
 }
