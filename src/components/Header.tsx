@@ -1,4 +1,8 @@
 import { Hyperlink } from "./reset/Hyperlink";
+import gitHubIconSm from '../../public/assets/icons/tecnologias/github-icon-sm.png'
+import linkedinIconSm from '../../public/assets/icons/tecnologias/linkedin-icon-sm.png'
+import instagramIconSm from '../../public/assets/icons/tecnologias/instagram-icon-sm.png'
+import perfilPicture from '../../public/assets/perfil-picture.jpeg'
 
 export function Header(){
     return(
@@ -7,7 +11,7 @@ export function Header(){
                 <div className="h-36">
                     <img 
                         className='object-cover rounded-full aspect-square' 
-                        src="https://arslibri.com.br/assets/home/sobre-nos-fotos/pedro.webp" 
+                        src={perfilPicture} 
                         alt="" 
                         width={144}
                     />
@@ -24,19 +28,19 @@ export function Header(){
                             href="https://github.com/furPedroRibeiro"
                             className="text-primary"
                         >
-                            <img src="/../../public/assets/icons/tecnologias/github-icon-sm.png" alt="" width={30} />
+                            <img src={gitHubIconSm} alt="" width={30} />
                         </a>
                         <a 
                             href="https://www.linkedin.com/in/pedro-ribeiro-abaa0b293"
                             className="text-primary"
                         >
-                            <img src="/../../public/assets/icons/tecnologias/linkedin-icon-sm.png" alt="" width={30} />
+                            <img src={linkedinIconSm} alt="" width={30} />
                         </a>
                         <a 
                             href="https://instagram.com/pedrol.js"
                             className="text-primary"
                         >
-                            <img src="/../../public/assets/icons/tecnologias/instagram-icon-sm.png" alt="" width={30} />
+                            <img src={instagramIconSm} alt="" width={30} />
                         </a>
                     </div>
                 </div>

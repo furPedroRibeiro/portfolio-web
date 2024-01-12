@@ -2,6 +2,7 @@
 export default {
   content: [
     './src/**/*.tsx',
+    './public/**/*.png',
     './index.html'
   ],
   theme: {
@@ -15,10 +16,7 @@ export default {
       'out-contrast': '#212121',
     },
     extend: {
-      transitionProperty: {
-        'display': 'display',
-        'spacing': 'margin, padding, height, opacity',
-      }
+      
     },
   },
   plugins: [],
