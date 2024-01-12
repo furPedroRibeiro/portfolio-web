@@ -1,12 +1,22 @@
+import { Typewriter } from "react-simple-typewriter"
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+import { useEffect } from "react";
+
 import { Hyperlink } from "./reset/Hyperlink";
+
 import gitHubIconSm from '../../public/assets/icons/tecnologias/github-icon-sm.png'
 import linkedinIconSm from '../../public/assets/icons/tecnologias/linkedin-icon-sm.png'
 import instagramIconSm from '../../public/assets/icons/tecnologias/instagram-icon-sm.png'
 import perfilPicture from '../../public/assets/perfil-picture.jpeg'
 
 export function Header(){
+    useEffect(() => {
+        AOS.init()
+    })
     return(
-        <section className="mx-6" aria-label="Cabeçalho sobre mim">
+        <section className="mx-6" aria-label="Cabeçalho sobre mim" data-aos="fade-right">
             <div className='flex flex-wrap-reverse items-center justify-center h-auto gap-8 py-12'>
                 <div className="h-36">
                     <img 
@@ -20,8 +30,16 @@ export function Header(){
                     <h1 className='font-black text-2xl text-terciary'>
                         Pedro Luis de Alencar Ribeiro
                     </h1>
-                    <p className='font-semibold italic text-lg text-primary'>
-                        Desenvolvedor front-end
+                    <p className='font-bold italic text-lg text-[#5cc8fb] '>
+                        <Typewriter
+                            words={['Desenvolvedor front-end', 'Idealizador do projeto Ars Libri', 'Designer']}
+                            typeSpeed={90}
+                            deleteSpeed={30}
+                            delaySpeed={1800}
+                            loop
+                            cursor
+                            cursorBlinking={true}
+                        ></Typewriter>
                     </p>
                     <div className="flex flex-row gap-1">
                         <a 

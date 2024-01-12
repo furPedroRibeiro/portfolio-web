@@ -1,12 +1,17 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import { Header } from './components/Header'
 import { Body } from './components/Body'
 
 
 import './styles/App.css'
+import { useEffect } from 'react'
 
 function App() {
-  
+  useEffect(() => {
+    AOS.init()
+  })
   return (
       <div className='flex flex-col items-center justify-center gap-10 mt-6'>
         <Header></Header>
@@ -20,6 +25,7 @@ function App() {
                 className="
                   flex flex-col items-center justify-center text-center
                 "
+                data-aos="fade-left"
             >
             <p className='font-medium text-lg'>
               By: Pedro Ribeiro <br />

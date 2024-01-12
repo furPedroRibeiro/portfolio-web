@@ -1,3 +1,8 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+import { useEffect } from "react";
+
 import reactIcon from '../../public/assets/icons/tecnologias/react-icon.png'
 import typescriptIcon from '../../public/assets/icons/tecnologias/ts-icon.png'
 import javascriptIcon from '../../public/assets/icons/tecnologias/js-icon.png'
@@ -11,9 +16,12 @@ import { CardProjetos, CardTecnologias } from "./cards/Cards";
 import { TitleSection } from "./reset/TitleSection";
 
 export function Body(){
-    return(
+    useEffect(() => {
+        AOS.init()
+    })
+    return(   
         <div>
-            <section className="flex flex-col items-center justify-center mb-10 mx-6">
+            <section className="flex flex-col items-center justify-center mb-10 mx-6" data-aos="fade-left">
                 <TitleSection
                 title='Tecnologias'
                 />
@@ -55,7 +63,7 @@ export function Body(){
                         ></CardTecnologias>
                     </div>
             </section>
-            <section className="flex flex-col items-center justify-center mb-10">
+            <section className="flex flex-col items-center justify-center mb-10" data-aos="fade-right">
                 <TitleSection
                     title='Projetos'
                 ></TitleSection>
