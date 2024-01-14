@@ -13,7 +13,7 @@ function App() {
     AOS.init()
   })
   return (
-      <div className='flex flex-col items-center justify-center gap-10 mt-6'>
+      <div className='flex flex-col items-center justify-center gap-10 w-full overflow-hidden'>
         <Header></Header>
         <Body></Body>
         <section className="
