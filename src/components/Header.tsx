@@ -19,15 +19,15 @@ export function Header(){
     return(
         <section 
             className="
-                mx-6 w-full
+                w-full
                 max-[900px]:px-[5%]
                 h-auto
                 flex flex-row items-center justify-center
                 flex-wrap
-                xl:items-center xl:px-[200px]
+                xl:items-center
                 gap-40
                 bg-secondary
-            " 
+            "
             aria-label="Cabeçalho sobre mim" 
             data-aos="fade-right"
         >
@@ -58,24 +58,24 @@ export function Header(){
                                     cursorBlinking={true}
                                 ></Typewriter>
                             </p>
-                            <div className="flex flex-row gap-1 items-center">
+                            <div className="flex flex-row gap-1 items-center h-[35px]">
                                 <a 
                                     href="https://github.com/furPedroRibeiro"
                                     className="text-primary group"
                                 >
-                                    <img className="group-hover:w-10 transition-all duration-500" src={gitHubIconSm} alt="" width={30} />
+                                    <img className="group-hover:w-10 transition-all duration-400" src={gitHubIconSm} alt="" width={30} />
                                 </a>
                                 <a 
                                     href="https://www.linkedin.com/in/pedro-ribeiro-abaa0b293"
                                     className="text-primary group"
                                 >
-                                    <img className="group-hover:w-10 transition-all duration-500" src={linkedinIconSm} alt="" width={30} />
+                                    <img className="group-hover:w-10 transition-all duration-400" src={linkedinIconSm} alt="" width={30} />
                                 </a>
                                 <a 
                                     href="https://instagram.com/pedrol.js"
                                     className="text-primary group"
                                 >
-                                    <img className="group-hover:w-10 transition-all duration-500" src={instagramIconSm} alt="" width={30} />
+                                    <img className="group-hover:w-10 transition-all duration-400" src={instagramIconSm} alt="" width={30} />
                                 </a>
                             </div>
                         </div>

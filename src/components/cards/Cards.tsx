@@ -10,15 +10,17 @@ export function CardTecnologias(props: CardTecnologias){
         target='_blank' 
         className='
             flex flex-col items-center justify-center 
-            px-6 gap-3 py-10 
+            px-6 gap-4 py-10 
             cursor-pointer rounded-xl
-            hover:bg-secondary hover:bg-opacity-30 
-            transition-color duration-700
+            
+            border border-primary
+            hover:border-secondary
+            transition-colors duration-700
         '>
             <div className='h-40 flex items-center'>
                 <img src={props.iconCard} alt="" width={160}/>
             </div>
-            <p className='font-bold text-xl text-primary'>
+            <p className='font-bold text-xl text-secondary'>
                 {props.title}
             </p>
         </a>

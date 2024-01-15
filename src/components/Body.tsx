@@ -13,19 +13,18 @@ import githubIcon from '../../public/assets/icons/tecnologias/github-icon-lg.png
 import arslibriIcon from '../../public/assets/icons/projetos/arslibri-icon.png'
 
 import { CardProjetos, CardTecnologias } from "./cards/Cards";
-import { TitleSection } from "./reset/TitleSection";
 
 export function Body(){
     useEffect(() => {
         AOS.init()
     })
     return(   
-        <div>
-            <section className="flex flex-col items-center justify-center mb-10 mx-6" data-aos="fade-left">
-                <TitleSection
-                title='Tecnologias'
-                />
-                    <div className="flex items-center justify-center flex-wrap gap-8">
+        <div className='w-full'>
+            <section className="flex flex-col items-center justify-center py-32 px-6 bg-primary">
+                <h1 className='font-black text-3xl text-secondary mb-10'>Tecnologias</h1>
+                    <div 
+                    className="flex items-center justify-center flex-wrap gap-8"
+                    data-aos="fade-left">
                         <CardTecnologias
                             aUrl='https://pt-br.react.dev/blog/2023/03/16/introducing-react-dev'
                             iconCard={reactIcon}
@@ -63,11 +62,9 @@ export function Body(){
                         ></CardTecnologias>
                     </div>
             </section>
-            <section className="flex flex-col items-center justify-center mb-10" data-aos="fade-right">
-                <TitleSection
-                    title='Projetos'
-                ></TitleSection>
-                <div className='flex items-center justify-center'>
+            <section className="flex flex-col items-center justify-center py-32 px-6 bg-secondary">
+                <h1 className='font-black text-3xl text-primary mb-10'>Projetos</h1>
+                <div className='flex items-center justify-center gap-8' data-aos="fade-right">
                     <CardProjetos
                         aUrl='https://arslibri.com.br'
                         iconCard={arslibriIcon}
