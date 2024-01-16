@@ -1,28 +1,42 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
+
 interface CardTecnologias{
     aUrl: string;
     iconCard: string;
     title: string;
 }
 export function CardTecnologias(props: CardTecnologias){
+    useEffect(() => {
+        AOS.init()
+    })
     return(
         <a 
         href={props.aUrl} 
-        target='_blank' 
+        target='_blank'
         className='
-            flex flex-col items-center justify-center 
-            px-6 gap-4 py-10 
             cursor-pointer rounded-xl
             
             border border-primary
-            hover:border-secondary
-            transition-colors duration-700
-        '>
-            <div className='h-40 flex items-center'>
-                <img src={props.iconCard} alt="" width={160}/>
+            
+            hover:-translate-y-2
+            transition-all duration-700'
+        
+        >
+            <div className='
+                flex flex-col items-center justify-center 
+                px-6 gap-4 py-10
+            '
+            data-aos="fade-left"
+            >
+                <div className='h-40 flex items-center'>
+                    <img src={props.iconCard} alt="" width={160}/>
+                </div>
+                <p className='font-bold text-xl text-secondary'>
+                    {props.title}
+                </p>
             </div>
-            <p className='font-bold text-xl text-secondary'>
-                {props.title}
-            </p>
         </a>
     );
 }

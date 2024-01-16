@@ -24,7 +24,7 @@ export function Body(){
                 <h1 className='font-black text-3xl text-secondary mb-10'>Tecnologias</h1>
                     <div 
                     className="flex items-center justify-center flex-wrap gap-8"
-                    data-aos="fade-left">
+                    >
                         <CardTecnologias
                             aUrl='https://pt-br.react.dev/blog/2023/03/16/introducing-react-dev'
                             iconCard={reactIcon}
