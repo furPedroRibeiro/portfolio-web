@@ -2,9 +2,9 @@ import { Typewriter } from "react-simple-typewriter"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-import { useEffect } from "react";
+import { useEffect } from "react"
 
-import { Hyperlink } from "./reset/Hyperlink";
+import { Hyperlink } from "./reset/Hyperlink"
 
 import gitHubIconSm from '../../public/assets/icons/tecnologias/github-icon-sm.png'
 import linkedinIconSm from '../../public/assets/icons/tecnologias/linkedin-icon-sm.png'
@@ -95,7 +95,7 @@ export function Header(){
                             aUrl='https://instagram.com/ars.libri'
                             target="_blank"
                             content=" Ars Libri"
-                        />.
+                        />. Além disso, estou cursando Engenharia de computação na USP de São Carlos(EESC e ICMC).
                     </p>
                 </div>
                 <div
@@ -105,7 +105,7 @@ export function Header(){
                     "
                 >
                     <img
-                        className="max-[400px]:w-[100%]" 
+                        className="max-[400px]:w-[100%] h-full object-cover" 
                         src={hamletImg}
                         alt="" 
                         width={400}

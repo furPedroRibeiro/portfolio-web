@@ -11,6 +11,9 @@ import htmlIcon from '../../public/assets/icons/tecnologias/html-icon.png'
 import cssIcon from '../../public/assets/icons/tecnologias/css-icon.png'
 import githubIcon from '../../public/assets/icons/tecnologias/github-icon-lg.png'
 import arslibriIcon from '../../public/assets/icons/projetos/arslibri-icon.png'
+import tabuadaIcon from '../../public/assets/icons/projetos/tabuada-icon.png'
+import figmaIcon from '../../public/assets/icons/tecnologias/figma-icon.png'
+import cIcon from '../../public/assets/icons/tecnologias/c-icon.png'
 
 import { CardProjetos, CardTecnologias } from "./cards/Cards";
 
@@ -60,16 +63,33 @@ export function Body(){
                             iconCard={githubIcon}
                             title='Github'
                         ></CardTecnologias>
+                        <CardTecnologias
+                            aUrl='https://figma.com/'
+                            iconCard={figmaIcon}
+                            title='Figma'
+                        ></CardTecnologias>
+                        <CardTecnologias
+                            aUrl='#'
+                            iconCard={cIcon}
+                            title='C'
+                        ></CardTecnologias>
                     </div>
             </section>
             <section className="flex flex-col items-center justify-center py-32 px-6 bg-secondary">
                 <h1 className='font-black text-3xl text-primary mb-10'>Projetos</h1>
-                <div className='flex items-center justify-center gap-8' data-aos="fade-right">
+                <div className='flex items-center flex-wrap justify-center gap-8' data-aos="fade-right">
                     <CardProjetos
                         aUrl='https://arslibri.com.br'
                         iconCard={arslibriIcon}
                         title='Ars Libri'
-                        desc='Ars Libri - Cultura e acessibilidade é um projeto que nasceu de um TCC e por interesse pessoal da equipe continuou sendo pensado e desenvolvido. Nele, os usuários podem ter acesso a cultura de uma maneira diferente e lúdica, além disso ainda disponibiliza lugar de fala para artistas e permite a exploração da história através do tempo.'
+                        desc=''
+                    >
+                    </CardProjetos>
+                    <CardProjetos
+                        aUrl='https://tabuadamemorizer.vercel.app'
+                        iconCard={tabuadaIcon}
+                        title='Tabuada Memorizer'
+                        desc=''
                     >
                     </CardProjetos>
                 </div>

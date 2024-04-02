@@ -31,7 +31,7 @@ export function CardTecnologias(props: CardTecnologias){
             data-aos="fade-left"
             >
                 <div className='h-40 flex items-center'>
-                    <img src={props.iconCard} alt="" width={160}/>
+                    <img className='h-40 object-cover' src={props.iconCard} alt=""/>
                 </div>
                 <p className='font-bold text-xl text-secondary'>
                     {props.title}
@@ -66,7 +66,7 @@ export function CardProjetos(props: CardProjetos){
                     flex-col
                     items-center
                     justify-center
-                    gap-1
+                    gap-4
                     "
             >
                 <img 
