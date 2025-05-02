@@ -25,15 +25,13 @@ function App() {
                 className="
                   flex flex-col items-center justify-center text-center
                 "
-                data-aos="fade-left"
             >
-            <p className='font-medium text-lg'>
-              By: Pedro Ribeiro <br />
-              <strong>pedrocodejob@gmail.com</strong> <br />
+            <p className='font-medium text-lg text-[#1e1e1e]'>
+              <strong>pedro-ribeiro@usp.br</strong> <br />
               <a target='_blank' href='https://www.linkedin.com/in/pedro-ribeiro-abaa0b293' className='underline font-bold'>Linkedin</a> <br />
               <a target='_blank' href='https://www.github.com/furPedroRibeiro' className='underline font-bold'>Github</a> <br />
-              Idade: 17 <br />
-              Peruíbe, SP
+              Idade: 18 <br />
+              São Carlos, SP
             </p>
           </address>
         </section>

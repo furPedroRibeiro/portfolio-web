@@ -12,7 +12,7 @@ export default {
     colors:{
       'primary': 'white',
       'secondary': 'black',
-      'terciary': '#db1414',
+      'terciary': '#3766FF',
       'out-contrast': '#212121',
     },
     extend: {

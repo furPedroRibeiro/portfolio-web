@@ -14,6 +14,7 @@ import arslibriIcon from '../../public/assets/icons/projetos/arslibri-icon.png'
 import tabuadaIcon from '../../public/assets/icons/projetos/tabuada-icon.png'
 import figmaIcon from '../../public/assets/icons/tecnologias/figma-icon.png'
 import cIcon from '../../public/assets/icons/tecnologias/c-icon.png'
+import parisIcon from '../../public/assets/icons/projetos/paris2024.png'
 
 import { CardProjetos, CardTecnologias } from "./cards/Cards";
 
@@ -23,75 +24,94 @@ export function Body(){
     })
     return(   
         <div className='w-full'>
-            <section className="flex flex-col items-center justify-center py-32 px-6 bg-primary">
-                <h1 className='font-black text-3xl text-secondary mb-10'>Tecnologias</h1>
+            <section className="flex flex-col items-center justify-center py-20 px-6 bg-primary">
+                <h1 className='font-black text-3xl text-[#1e1e1e] mb-10'>Tecnologias</h1>
                     <div 
                     className="flex items-center justify-center flex-wrap gap-8"
                     >
                         <CardTecnologias
                             aUrl='https://pt-br.react.dev/blog/2023/03/16/introducing-react-dev'
                             iconCard={reactIcon}
-                            title='React'
+                            title=''
                         ></CardTecnologias>
                         <CardTecnologias
                             aUrl='https://www.typescriptlang.org/'
                             iconCard={typescriptIcon}
-                            title='Typescript'
+                            title=''
                         ></CardTecnologias>
                         <CardTecnologias
                             aUrl='https://developer.mozilla.org/pt-BR/docs/Web/JavaScript'
                             iconCard={javascriptIcon}
-                            title='Javascript'
+                            title=''
                         ></CardTecnologias>
                         <CardTecnologias
                             aUrl='https://tailwindcss.com/'
                             iconCard={tailwindIcon}
-                            title='Tailwind'
+                            title=''
                         ></CardTecnologias>
                         <CardTecnologias
                             aUrl='https://developer.mozilla.org/pt-BR/docs/Web/HTML'
                             iconCard={htmlIcon}
-                            title='HTML'
+                            title=''
                         ></CardTecnologias>
                         <CardTecnologias
                             aUrl='https://developer.mozilla.org/pt-BR/docs/Web/CSS'
                             iconCard={cssIcon}
-                            title='CSS'
+                            title=''
                         ></CardTecnologias>
                         <CardTecnologias
                             aUrl='https://github.com/'
                             iconCard={githubIcon}
-                            title='Github'
+                            title=''
                         ></CardTecnologias>
                         <CardTecnologias
                             aUrl='https://figma.com/'
                             iconCard={figmaIcon}
-                            title='Figma'
+                            title=''
                         ></CardTecnologias>
                         <CardTecnologias
                             aUrl='#'
                             iconCard={cIcon}
-                            title='C'
+                            title=''
                         ></CardTecnologias>
                     </div>
             </section>
-            <section className="flex flex-col items-center justify-center py-32 px-6 bg-secondary">
+            <section className="flex flex-col items-center justify-center py-20 px-6 bg-[#1e1e1e] gap-10">
                 <h1 className='font-black text-3xl text-primary mb-10'>Projetos</h1>
-                <div className='flex items-center flex-wrap justify-center gap-8' data-aos="fade-right">
-                    <CardProjetos
-                        aUrl='https://arslibri.com.br'
-                        iconCard={arslibriIcon}
-                        title='Ars Libri'
-                        desc=''
-                    >
-                    </CardProjetos>
+                <div className='flex items-center flex-wrap justify-center gap-x-12 gap-y-10'>
                     <CardProjetos
                         aUrl='https://tabuadamemorizer.vercel.app'
                         iconCard={tabuadaIcon}
-                        title='Tabuada Memorizer'
+                        title=''
                         desc=''
                     >
                     </CardProjetos>
+                    <CardProjetos
+                        aUrl='https://quadrodemedalhasparis2024.vercel.app/'
+                        iconCard={parisIcon}
+                        title=''
+                        desc=''
+                    >
+                    </CardProjetos>
+                    <CardProjetos
+                        aUrl='https://notesbyaudio.vercel.app/'
+                        iconCard={"https://notesbyaudio.vercel.app/assets/logo-nlw-expert-8i9AeB0n.svg"}
+                        title=''
+                        desc=''
+                    >
+                    </CardProjetos>
+                    <CardProjetos
+                        aUrl='https://cardapiolatavola.vercel.app/'
+                        iconCard={"https://cardapiolatavola.vercel.app/assets/logo-D5BrpOxG.png"}
+                        title=''
+                        desc=''
+                    ></CardProjetos>
+                    <CardProjetos
+                        aUrl='https://instagram.com/ars.libri'
+                        iconCard={arslibriIcon}
+                        title=''
+                        desc=''
+                    ></CardProjetos>
                 </div>
             </section>
         </div>

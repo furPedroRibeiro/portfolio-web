@@ -17,26 +17,21 @@ export function CardTecnologias(props: CardTecnologias){
         target='_blank'
         className='
             cursor-pointer rounded-xl
-            
-            border border-primary
-            
-            hover:-translate-y-2
-            transition-all duration-700'
-        
-        >
-            <div className='
-                flex flex-col items-center justify-center 
-                px-6 gap-4 py-10
+            transition-all duration-700
+            hover:translate-y-4
+            flex flex-col items-center justify-center 
+            px-12 gap-y-6 py-10
             '
+            
             data-aos="fade-left"
-            >
-                <div className='h-40 flex items-center'>
-                    <img className='h-40 object-cover' src={props.iconCard} alt=""/>
-                </div>
-                <p className='font-bold text-xl text-secondary'>
-                    {props.title}
-                </p>
+        >
+            <div className='flex items-center'>
+                <img className='h-[140px] w-[140px] object-contain transition-all duration-700
+                    group-hover:translate-y-2' src={props.iconCard} alt=""/>
             </div>
+            <p className='font-semibold text-xl text-secondary'>
+                {props.title}
+            </p>
         </a>
     );
 }
@@ -54,11 +49,13 @@ export function CardProjetos(props: CardProjetos){
             target='_blank'
             className='
             flex flex-col items-center justify-center
-            gap-3 py-10 px-6 w-80
+            py-10 px-10 w-50 h-50
             cursor-pointer
             transition-color duration-700
-            
+            rounded-xl
+            bg-primary bg-opacity-100
             '
+            data-aos="fade-right"
         >
             <div
                 className="
@@ -66,46 +63,32 @@ export function CardProjetos(props: CardProjetos){
                     flex-col
                     items-center
                     justify-center
-                    gap-4
                     "
             >
                 <img 
                 className='
+                    object-contain
                     rounded-full
+                    h-[160px]
                 ' 
                 src={props.iconCard} 
-                alt="" 
-                width={160} />
+                alt=""
+                width={160}
+                 />
                 <p 
-                className='font-bold text-xl text-primary'>
+                className='font-semibold text-xl text-secondary'>
                     {props.title}
                 </p>
             </div>
             <p 
                 className="
                     font-medium text-lg text-center 
-                    text-primary 
+                    text-secondary 
                     transition-all
                     duration-700
                 ">
                     {props.desc}
-                    </p>
-                <button 
-                className="
-                    group
-                    z-10
-                    mt-3 py-3 px-4
-                    rounded-lg border border-primary
-                    text-primary
-                    font-medium
-                    hover:bg-primary
-                    hover:text-secondary
-                    hover:font-bold
-                    transition-color
-                    duration-700
-                ">
-                    Ver mais
-                </button>
+            </p>
         </a>
     );
 }
