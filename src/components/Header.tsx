@@ -101,7 +101,7 @@ export function Header(){
                             aUrl='https://etecperuibe.com.br/'
                             target='_blank'
                             content=' Etec de Peruíbe'
-                        />, posso atuar como desenvolvedor web, designer e idealizar projetos como o TCC desenvolvido no curso técnico. Além disso, estou no terceiro semestre de Engenharia de computação na USP São Carlos (<Hyperlink
+                        />, posso atuar como desenvolvedor web, designer e idealizar projetos como o TCC desenvolvido no curso técnico. Além disso, estou no quinto semestre de Engenharia de computação na USP São Carlos (<Hyperlink
                             aUrl='https://eesc.usp.br/'
                             target='_blank'
                             content='EESC'
