@@ -107,7 +107,13 @@ export function Body(){
                         desc=''
                     ></CardProjetos>
                     <CardProjetos
-                        aUrl='https://instagram.com/ars.libri'
+                        aUrl='https://ars-libri.github.io/home/'
+                        iconCard={arslibriIcon}
+                        title=''
+                        desc=''
+                    ></CardProjetos>
+                    <CardProjetos
+                        aUrl='https://login-arslibri-test-react.vercel.app/'
                         iconCard={arslibriIcon}
                         title=''
                         desc=''
