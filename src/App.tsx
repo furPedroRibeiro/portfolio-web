@@ -30,7 +30,7 @@ function App() {
               <strong>pedro-ribeiro@usp.br</strong> <br />
               <a target='_blank' href='https://www.linkedin.com/in/pedro-ribeiro-abaa0b293' className='underline font-bold'>Linkedin</a> <br />
               <a target='_blank' href='https://www.github.com/furPedroRibeiro' className='underline font-bold'>Github</a> <br />
-              Idade: 18 <br />
+              Idade: 19 <br />
               São Carlos, SP
             </p>
           </address>
